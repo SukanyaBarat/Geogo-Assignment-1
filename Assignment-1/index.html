@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Sidebar -->
+    <div class="container-fluid">
+        <div class="row flex-lg-nowrap">
+            <div class="bg-white col-4  col-lg-2 h-100 min-vh-100 d-flex flex-column justify-content-between">
+                <div class="bg-white p-2">
+                    <a class="d-flex text-decoration-none mt-1 align-items-center text-black">
+                        <span class="fs-4 ms-2 text-black fw-bold d-sm-inline">Cuacane</span>
+                    </a>
+                    <ul class="nav nav-pills flex-column mt-4">
+                        <li class="nav-item py-2 py-sm-0">
+                            <a href="#" class="nav-link text-black active bg-primary-subtle text-dark"
+                                aria-current="page">
+                                <i class="fs-6 bi bi-command"></i><span
+                                    class="fs-6 ms-2 d-none d-sm-inline">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item py-2 py-sm-0">
+                            <a href="#" class="nav-link text-black">
+                                <i class="fs-6 bi bi-geo-alt-fill"></i><span
+                                    class="fs-6 ms-2 d-none d-sm-inline">Map</span>
+                            </a>
+                        </li>
+                        <li class="nav-item py-2 py-sm-0">
+                            <a href="#" class="nav-link text-black">
+                                <i class="fs-6 bi bi-geo"></i><span
+                                    class="fs-6 ms-2 d-none d-sm-inline">SavedLocation</span>
+                            </a>
+                        </li>
+                        <li class="nav-item py-2 py-sm-0">
+                            <a href="#" class="nav-link text-black">
+                                <i class="fs-6 bi bi-calendar"></i><span
+                                    class="fs-6 ms-2 d-none d-sm-inline">Calendar</span>
+                            </a>
+                        </li>
+                        <li class="nav-item py-2 py-sm-0">
+                            <a href="#" class="nav-link text-black">
+                                <i class="fs-6 bi bi-gear"></i><span
+                                    class="fs-6 ms-2 d-none d-sm-inline">Settings</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="nav nav-pills flex-column pb-2">
+                    <li class="nav-item py-2 py-sm-0">
+                        <a href="#" class="nav-link text-black">
+                            <i class="fs-6 bi bi-box-arrow-right"></i><span
+                                class="fs-6 ms-2 d-none d-sm-inline">Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--Searchbar-->
+            <div class="col-lg-6 justify-content-center mt-2  px-2 mb-lg-2">
+                <div class=" d-flex row-cols-1 align-items-center  ">
+                    <form class="w-100  me-2 form-inline" role="search">
+                        <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                    </form>
+                    <div class="flex-shrink-0 ">
+                        <i class="fs-6 bi bi-bell px-2 "></i>
+                        <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                    </div>
+                </div>
+
+                <!-- Middle part -->
+                <div class="container   position-static justify-content-center  mt-lg-2 my-2 me-0 ms-2">
+                    <div class="modal-dialog mx-2 mt-0  w-100 h-25 back-img  rounded-4 shadow" role="document">
+                        <div class=" flex modal-body p-2">
+                            <div class="nav flex-row mt-2  justify-content-between">
+                                <div class="nav-item py-2  py-sm-0">
+                                    <a href="#" class="nav-link text-blue">
+                                        <i class="fs-3  flex-column mb-2 bi bi-geo-alt-fill "></i>
+                                        <span class="fs-3   d-sm-inline">Gotham</span>
+                                    </a>
+                                </div>
+                                <div class="col pt-3 ms-4">
+                                    <div class=" nav-item py-2 py-sm-0">
+                                        <span class="fs-6   d-sm-inline">Today 00:32PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" mb-2 my-3 justify-content-between">
+                                <div class="d-flex  text-blue">
+                                    <div class="px-5 mx-5 justify-content-center mb-0 fw-normal">
+                                        <span
+                                            class="d-flex px-6 pt-2 flex-shrink-0  mb-0 display-2 fw-semibold ">14</span>
+                                        Mostly Clear
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex mt-3 bottom-2 px-2 pb-1 py-2 gap-4 mb-4">
+                                <div class="container">
+                                    <div class="row ">
+                                        <ul class="nav  nav-pills flex col pb-2">
+                                            <li class=" nav-item py-2 py-sm-0">
+                                                <a href="#" class="nav-link text-black">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-wind" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M12.5 2A2.5 2.5 0 0 0 10 4.5a.5.5 0 0 1-1 0A3.5 3.5 0 1 1 12.5 8H.5a.5.5 0 0 1 0-1h12a2.5 2.5 0 0 0 0-5zm-7 1a1 1 0 0 0-1 1 .5.5 0 0 1-1 0 2 2 0 1 1 2 2h-5a.5.5 0 0 1 0-1h5a1 1 0 0 0 0-2zM0 9.5A.5.5 0 0 1 .5 9h10.042a3 3 0 1 1-3 3 .5.5 0 0 1 1 0 2 2 0 1 0 2-2H.5a.5.5 0 0 1-.5-.5z" />
+                                                    </svg><span
+                                                        class="small fw-light ms-1 d-none d-sm-inline">720hpa</span>
+                                                </a>
+                                            </li>
+                                            <li class=" nav-item py-2 py-sm-0">
+                                                <a href="#" class="nav-link text-black">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-droplet" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M7.21.8C7.69.295 8 0 8 0c.109.363.234.708.371 1.038.812 1.946 2.073 3.35 3.197 4.6C12.878 7.096 14 8.345 14 10a6 6 0 0 1-12 0C2 6.668 5.58 2.517 7.21.8zm.413 1.021A31.25 31.25 0 0 0 5.794 3.99c-.726.95-1.436 2.008-1.96 3.07C3.304 8.133 3 9.138 3 10a5 5 0 0 0 10 0c0-1.201-.796-2.157-2.181-3.7l-.03-.032C9.75 5.11 8.5 3.72 7.623 1.82z" />
+                                                        <path fill-rule="evenodd"
+                                                            d="M4.553 7.776c.82-1.641 1.717-2.753 2.093-3.13l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448z" />
+                                                    </svg><span
+                                                        class="small fw-light ms-1 d-none d-sm-inline">32%</span>
+                                                </a>
+                                            </li>
+                                            <li class=" nav-item py-2 py-sm-0">
+                                                <a href="#" class="nav-link text-black">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-wind" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M12.5 2A2.5 2.5 0 0 0 10 4.5a.5.5 0 0 1-1 0A3.5 3.5 0 1 1 12.5 8H.5a.5.5 0 0 1 0-1h12a2.5 2.5 0 0 0 0-5zm-7 1a1 1 0 0 0-1 1 .5.5 0 0 1-1 0 2 2 0 1 1 2 2h-5a.5.5 0 0 1 0-1h5a1 1 0 0 0 0-2zM0 9.5A.5.5 0 0 1 .5 9h10.042a3 3 0 1 1-3 3 .5.5 0 0 1 1 0 2 2 0 1 0 2-2H.5a.5.5 0 0 1-.5-.5z" />
+                                                    </svg><span
+                                                        class="small fw-light ms-1 d-none d-sm-inline">12km/h</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container box position-absolute justify-content-lg-end">
+                            <div class="  col-lg-6 mt-2">
+                                <div class=" ms-1  me-2">
+                                    <div class="h-lg-100 w-lg-25 p-2 bgcolor  rounded-3">
+                                        <span class="fs-5 text-black fw-semibold ">Temperature</span>
+                                        <div class=" small fw-semibold text-black-50">
+                                         Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Veniam est ut ipsa. Commodi, architecto. Distinctio, ipsum porro <br>quo blanditiis temporibus saepe aperiam iusto fugit inventore,<br> animi cupiditate tempore voluptates soluta.
+                                        </div>
+                                        
+                                            <div class="row">
+                                                <ul class="nav  flex col-2  justify-content-between mt-1 me-1 ms-2">
+                                                    <li class="nav-item ">
+                                                        <a href="#" class="nav-link text-black">
+                                                            <div class="col align-items-end me-1">
+                                                                <div class="col">
+                                                                    <p class="small pb-0">Morning</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row align-items-end ms-1">
+                                                                <div class="col fw-bold">
+                                                                    <p>15</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <ul class="nav  flex col-2 justify-content-between mt-1 me-1 ms-2">
+                                                    <li class="nav-item ">
+                                                        <a href="#" class="nav-link text-black">
+                                                            <div class="col align-items-end me-1">
+                                                                <div class="col">
+                                                                    <p class="small pb-0">Afternoon</p>
+                                                                </div>
+                                                            </div>
+                                                           
+                                                            <div class="row align-items-end ms-1">
+                                                                <div class="col fw-bold">
+                                                                    <p>14</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <ul class="nav  flex col-2 justify-content-between mt-1 me-1 ms-2">
+                                                    <li class="nav-item ">
+                                                        <a href="#" class="nav-link text-black">
+                                                            <div class="col align-items-end ms-1 ">
+                                                                <div class="col">
+                                                                    <p class="small pb-0">Evening</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row align-items-end ms-1">
+                                                                <div class="col fw-bold">
+                                                                    <p>16</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <ul class="nav flex col-2 justify-content-between mt-1 ms-2">
+                                                    <li class="nav-item ">
+                                                        <a href="#" class="nav-link text-black">
+                                                            <div class="col align-items-end ms-2">
+                                                                <div class="col">
+                                                                    <p class="small pb-0">Night</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row align-items-end ms-1">
+                                                                <div class="col fw-bold">
+                                                                    <p>12</p>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="row align-items-center ms-4 my-4 me-2">
+                        <div class="col-lg-6">
+                            <div class="h-lg-25 w-lg-50 p-2  bg-light border rounded-3">
+                                <span class="fs-5 fw-semibold ">Wind</span>
+                                <div class="my-1 small fw-semibold text-black-50">
+                                    <p>Today wind speed</p>
+                                </div>
+                                <span class="fs-6 fw-semibold ">12 km/h</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="h-lg-25 w-lg-50 p-2  bg-white border rounded-3">
+                                <span class="fs-5 fw-semibold">Rain Chance</span>
+                                <div class="my-1 small fw-semibold text-black-50">
+                                    <p>Today rain chance</p>
+                                </div>
+                                <span class="fs-6 fw-semibold ">24%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center ms-4 my-4 me-2">
+                        <div class="col-lg-6">
+                            <div class="h-lg-25 w-lg-50 p-2  bg-white border rounded-3">
+                                <span class="fs-5 fw-semibold ">Pressure</span>
+                                <div class="my-1 small fw-semibold text-black-50">
+                                    <p>Today Pressure</p>
+                                </div>
+                                <span class="fs-6 fw-semibold ">720hpa</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="h-lg-25 w-lg-50 p-2  bg-white border rounded-3">
+                                <span class="fs-5 fw-semibold">UV Index</span>
+                                <div class="my-1 small fw-semibold text-black-50">
+                                    <p>Today UV Index</p>
+                                </div>
+                                <span class="fs-6 fw-semibold ">2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- right part -->
+    <div class="sidebar  h-100">
+        <div class="col-lg-6 col-md-4 offset-md-3">
+            <div class="flex align-items-center justify-content-between p-10">
+                <i class="bi bi-arrow-left me-3"></i>
+                This week
+                <i class="bi bi-arrow-right ms-3"></i>
+            </div>
+        </div>
+        <p class="mt-4">Today</p>
+        <div class="container">
+            <div class="row">
+                <ul class="nav nav-pills flex col-3  justify-content-between mt-4">
+                    <li class="nav-item py-2 py-sm-0">
+                        <a href="#" class="nav-link text-black">
+                            <div class="col align-items-end ">
+                                <div class="col">
+                                    <p class="small pb-0">Now</p>
+                                </div>
+                            </div>
+                            <div class="row align-items-end">
+                                <div class="col">
+                                    <i class="align-items-end justify-content-between bi-brightness-high"></i>
+                                </div>
+                            </div>
+                            <div class="row align-items-end">
+                                <div class="col fw-bold">
+                                    <p>24</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav nav-pills flex col-3 justify-content-between mt-4">
+                    <li class="nav-item py-2 py-sm-0">
+                        <a href="#" class="nav-link text-black">
+                            <div class="col align-items-end ">
+                                <div class="col">
+                                    <p class="small pb-0">1PM</p>
+                                </div>
+                            </div>
+                            <div class="row align-items-end">
+                                <div class="col">
+                                    <i class="align-items-end justify-content-between bi-brightness-high"></i>
+                                </div>
+                            </div>
+                            <div class="row align-items-end">
+                                <div class="col fw-bold">
+                                    <p>26</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav nav-pills flex col-3 justify-content-between mt-4">
+                    <li class="nav-item py-2 py-sm-0">
+                        <a href="#" class="nav-link text-black">
+                            <div class="col align-items-end ">
+                                <div class="col">
+                                    <p class="small pb-0">2PM</p>
+                                </div>
+                            </div>
+                            <div class="row align-items-end">
+                                <div class="col">
+                                    <i class=" align-items-end justify-content-between  bi-cloud  "></i>
+                                </div>
+                            </div>
+                            <div class="row align-items-end">
+                                <div class="col fw-bold">
+                                    <p>25</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav nav-pills flex col-3 justify-content-between mt-4">
+                    <li class="nav-item py-2 py-sm-0">
+                        <a href="#" class="nav-link text-black">
+                            <div class="col align-items-end ">
+                                <div class="col">
+                                    <p class="small pb-0">3PM</p>
+                                </div>
+                            </div>
+                            <div class="row align-items-end">
+                                <div class="col">
+                                    <i class=" align-items-end justify-content-between bi bi-lightning"></i>
+                                </div>
+                            </div>
+                            <div class="row align-items-end">
+                                <div class="col fw-bold">
+                                    <p>25</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container ">
+            <div class=" w-100 h-100 m-3 col-md-6 mb-3">
+                <div class=" me-3 justify-content-between mb-1">
+                    Tomorrow
+                    <span class=" align-items-center  fs-5 fw-bold p-3">16</span>
+                    <i class="ps-4 bi-brightness-high"></i>
+                    <p class="small fw-light">12apr</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class=" w-100 h-100 m-3 col-md-6 mb-3">
+                <div class=" me-3 justify-content-between">
+                    Monday
+                    <span class=" align-items-center fs-5 fw-bold m-2 p-3"> 15</span>
+                    <i class="ps-4 bi bi-cloud"></i>
+                    <p class="small fw-light">13apr</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class=" w-100 h-100 m-3 col-md-6 mb-3">
+                <div class=" me-3 justify-content-between">
+                    Tuesday
+                    <span class=" align-items-center fs-5 fw-bold m-2 p-3"> 14</span>
+                    <img class="ps-4 " src="cloud-drizzle.svg"></i>
+                    <p class="small fw-light">14apr</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class=" w-100 h-100 m-3 col-md-6 mb-3">
+                <div class=" me-3 justify-content-between">
+                    Wednesday
+                    <span class=" align-items-center fs-5 fw-bold m-1 p-2"> 15</span>
+                    <i class="ps-4 bi-lightning"></i>
+                    <p class="small fw-light">15apr</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class=" w-100 h-100 m-3 col-md-6 mb-3">
+                <div class=" me-3 justify-content-between">
+                    Thursday
+                    <span class=" align-items-center fs-5 fw-bold m-2 p-3"> 12</span>
+                    <img class="ps-4 " src="cloud-lightning-rain.svg"></i>
+                    <p class="small fw-light">16apr</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
